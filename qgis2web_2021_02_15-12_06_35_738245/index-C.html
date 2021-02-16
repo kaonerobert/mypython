@@ -43,15 +43,6 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		id: 'mapbox/streets-v11',
-		tileSize: 512,
-		zoomOffset: -1
-	}).addTo(map);
-
         function pop_lso_admbnda_adm0_FAO_MLGCA_2019_0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -64,14 +55,14 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
         function style_lso_admbnda_adm0_FAO_MLGCA_2019_0_0() {
             return {
                 pane: 'pane_lso_admbnda_adm0_FAO_MLGCA_2019_0',
-                opacity: 0,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 3.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 1,
                 fillColor: 'rgba(114,155,111,1.0)',
                 interactive: true,
             }
@@ -133,7 +124,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 1,
                 fillColor: 'rgba(150,150,150,1.0)',
                 interactive: true,
             }
@@ -196,14 +187,14 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
                 return {
                 pane: 'pane_POI_2',
                 radius: 2.0,
-                opacity: 0.5,
+                opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 1,
                 fillColor: 'rgba(0,219,243,1.0)',
                 interactive: true,
             }
@@ -219,7 +210,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 1,
                 fillColor: 'rgba(0,212,212,1.0)',
                 interactive: true,
             }
@@ -235,7 +226,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 1,
                 fillColor: 'rgba(176,204,65,1.0)',
                 interactive: true,
             }
@@ -251,7 +242,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 1,
                 fillColor: 'rgba(255,127,0,1.0)',
                 interactive: true,
             }
@@ -267,7 +258,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 1,
                 fillColor: 'rgba(255,39,15,1.0)',
                 interactive: true,
             }
